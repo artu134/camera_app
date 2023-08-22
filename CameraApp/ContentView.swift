@@ -6,7 +6,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Spacer()
-            CameraPreviewView(cameraManager: cameraManager)
+            CameraPreviewView(cameraManager)
                 .frame(height: UIScreen.main.bounds.height * 0.8)
             Spacer()
             HStack(spacing: 20) {
@@ -17,9 +17,10 @@ struct ContentView: View {
                         Image(systemName: "bolt.fill")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 50, height: 50)
-                            .padding()
+                            .frame(width: 40, height: 40) // smaller image size
+                            .padding(10) // smaller padding
                         Text("Flashlight")
+                            .font(.system(size: 14)) // smaller font size
                     }
                 }
                 Button(action: {
@@ -29,9 +30,10 @@ struct ContentView: View {
                         Image(systemName: "waveform")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 50, height: 50)
-                            .padding()
+                            .frame(width: 40, height: 40) // smaller image size
+                            .padding(10) // smaller padding
                         Text("Vocals")
+                            .font(.system(size: 14)) // smaller font size
                     }
                 }
                 Button(action: {
@@ -43,15 +45,14 @@ struct ContentView: View {
                         Image(systemName: "camera.fill")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 50, height: 50)
-                            .padding()
+                            .frame(width: 40, height: 40) // smaller image size
+                            .padding(10) // smaller padding
                         Text("Capture")
+                            .font(.system(size: 14)) // smaller font size
                     }
                 }
             }
-            .padding()
+            .padding(.bottom, 50) // increased padding at the bottom
         }
     }
 }
-
-
