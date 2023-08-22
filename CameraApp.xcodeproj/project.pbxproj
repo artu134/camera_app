@@ -14,6 +14,10 @@
 		5553222D2A946DCF00D61A8E /* CameraAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553222C2A946DCF00D61A8E /* CameraAppTests.swift */; };
 		555322372A946DD000D61A8E /* CameraAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555322362A946DD000D61A8E /* CameraAppUITests.swift */; };
 		555322392A946DD000D61A8E /* CameraAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555322382A946DD000D61A8E /* CameraAppUITestsLaunchTests.swift */; };
+		555322462A94701E00D61A8E /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555322452A94701E00D61A8E /* CameraPreview.swift */; };
+		555322492A9471F300D61A8E /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555322482A9471F300D61A8E /* CameraManager.swift */; };
+		5553224D2A9472C700D61A8E /* SegmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553224B2A9472C700D61A8E /* SegmentService.swift */; };
+		5553224E2A9472C700D61A8E /* SegmentationStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553224C2A9472C700D61A8E /* SegmentationStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		555322322A946DD000D61A8E /* CameraAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		555322362A946DD000D61A8E /* CameraAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAppUITests.swift; sourceTree = "<group>"; };
 		555322382A946DD000D61A8E /* CameraAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		555322452A94701E00D61A8E /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		555322482A9471F300D61A8E /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		5553224B2A9472C700D61A8E /* SegmentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentService.swift; sourceTree = "<group>"; };
+		5553224C2A9472C700D61A8E /* SegmentationStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentationStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,9 @@
 		5553221A2A946DCE00D61A8E /* CameraApp */ = {
 			isa = PBXGroup;
 			children = (
+				5553224A2A9472C700D61A8E /* SegmentationService */,
+				555322472A9471DA00D61A8E /* Manager */,
+				555322452A94701E00D61A8E /* CameraPreview.swift */,
 				5553221B2A946DCE00D61A8E /* CameraAppApp.swift */,
 				5553221D2A946DCE00D61A8E /* ContentView.swift */,
 				5553221F2A946DCF00D61A8E /* Assets.xcassets */,
@@ -125,6 +136,23 @@
 				555322382A946DD000D61A8E /* CameraAppUITestsLaunchTests.swift */,
 			);
 			path = CameraAppUITests;
+			sourceTree = "<group>";
+		};
+		555322472A9471DA00D61A8E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				555322482A9471F300D61A8E /* CameraManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		5553224A2A9472C700D61A8E /* SegmentationService */ = {
+			isa = PBXGroup;
+			children = (
+				5553224B2A9472C700D61A8E /* SegmentService.swift */,
+				5553224C2A9472C700D61A8E /* SegmentationStruct.swift */,
+			);
+			path = SegmentationService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				555322462A94701E00D61A8E /* CameraPreview.swift in Sources */,
 				5553221E2A946DCE00D61A8E /* ContentView.swift in Sources */,
+				5553224E2A9472C700D61A8E /* SegmentationStruct.swift in Sources */,
+				555322492A9471F300D61A8E /* CameraManager.swift in Sources */,
 				5553221C2A946DCE00D61A8E /* CameraAppApp.swift in Sources */,
+				5553224D2A9472C700D61A8E /* SegmentService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
